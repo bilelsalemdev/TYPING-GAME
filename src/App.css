@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+html, body {
+    background: black;
+    color: #00b800;
+    margin:0;
+    padding: 0;
+    padding-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: #a80020;
+    background: #00b800;
+    padding: 20px 30px;
+  
+}
+button:hover{
+  cursor: pointer;
+  background-color: darkgreen;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:disabled {
+    cursor: not-allowed;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    font-size: 40px;
+    text-align:center;
+    text-transform: uppercase;
+}
+h4{
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+    font-family: 'Press Start 2P', cursive;
+    border: 3px solid black;
+    width: 90%;
+    margin: 0 auto;
+    outline: none;
+    height: 200px;
+    background: #00b800;
+    padding: 10px;
+    font-size: 20px;
+}
+
+textarea:disabled {
+    background-color: #a5a2a2;
 }
